@@ -165,7 +165,7 @@ with open ("/tmp/all-datastore-documents.txt","r") as f:
 df = pd.json_normalize(data,sep="_")
 
 # convert json pandas dataframe to csv
-df.to_csv('/tmp/datastore-{datastore-id}.csv', index=False,quoting=1)
+df.to_csv('/tmp/datastore-{project_id}-{location}-{datastore-id}.csv', index=False,quoting=1)
 
 """ urls = list_indexed_urls(docs=docs)
 
