@@ -165,7 +165,7 @@ with open ("/tmp/all-datastore-documents.txt","r") as f:
 df = pd.json_normalize(data,sep="_")
 
 # convert json pandas dataframe to csv
-df.to_csv(f"/tmp/datastore-{project_id}-{location}-{datastore_id}.csv", index=False,quoting=1)
+df.to_csv(f"/tmp/datastore-{project_id}-{location}-{datastore_id}.csv",index=False,quoting=1)
 
 #[end data store index to csv]
         
